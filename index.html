@@ -1,0 +1,238 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>dialog</title>
+  </head>
+  <body>
+    <div>
+      <button data-open-modal >open</button>
+
+      <dialog data-modal class="modal">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate,
+          asperiores. Labore, fugit cum. At maxime ratione inventore aperiam
+          dolor ipsum molestiae amet, eligendi, voluptates asperiores atque
+          vitae commodi vero magnam.
+        </p>
+        <button data-close-modal>concelle</button>
+      </dialog>
+    </div>
+
+<div>
+  <aside>
+    <details class="details">
+      <summary>open the detail file</summary>
+      <p>this is learning in practical new html element that is now very helpfull </p>
+      <time datetime="2025-05-09">May 9, 2025</time>
+      <progress value="70" max="100">70%</progress>
+       <div contenteditable="true">You can edit this text</div> 
+       <figure>
+         <img src="" alt="" usemap='#girl'>
+         <figcaption>hello  guy  welcome go html leding</figcaption>
+       </figure>
+       <img src="edittor_html/cake.jpg" alt="" usemap='#girl'>
+       <map name="girl">
+        <area shape="circle" coords="0,0,82,120" href="https://www.tutorialbrain.com" alt="">
+        <area shape="rect" coords="10,0,0 192" href="https://www.google.com" alt="">
+       </map>
+       <h1> welcome <abbr title="world center house">wch</abbr> and it is located at Nigeria</h1>
+       <bdo dir="rtl">welcome to html </bdo>
+       <bdo dir="ltr">left to right</bdo>
+       <blockquote cite="https://www.google.com"> wel this a blocckquoted element in html</blockquote>
+       <div class="">
+       <form action="">
+        <input name="footS" list="footS">
+        <datalist id="footS">
+          <option value="casual shoes">
+          <option value="sports shoes">
+          <option value="formal shoes">
+          <option value="farmer shoes">
+          <option value="leders shoes">
+          <option value="sandals">
+        </datalist>
+        <input type="submit" >
+        </div>
+      
+       </form>
+      </div>
+      <div class="">
+        <fieldset>
+          <form action="">
+            <input type="checkbox" name="" id="">
+            <input type="text" name="" id="">
+            <input type="email" name="" id="">
+            <input type="password" name="" id="">
+            <input type="file" name="" id="">
+            l
+            <select name="" id="">
+              <optgroup>
+                <option value="t">t</option>
+                <option value="y">y</option>
+                <option value="u">u</option>
+                <option value="r">r</option>
+                <option value="0">0</option>
+              </optgroup>
+               <option value="uy">uy</option>
+                <option value="ru">ru</option>
+                <option value="0">0</option>
+            </select>
+          </form>
+        </fieldset>
+      </div>
+    </details>
+
+    <canvas id="myConvas">
+
+    </canvas>
+    <caption></caption>
+  </aside>
+</div>
+    <script>
+            const opentButton = document.querySelector('[data-open-modal]')
+            const closeButton = document.querySelector('[data-close-modal]')
+            const modal = document.querySelector('[data-modal]')
+
+
+      opentButton.addEventListener('click',()=>{
+        modal.showModal();
+      })
+
+      closeButton.addEventListener('click',()=>{
+        modal.close();
+      })
+
+
+    </script>
+    <script src="./app.js"></script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>HTML5 Demo</title>
+</head>
+<body>
+  <!-- Main Wrapper -->
+  <div class="container">
+
+    <!-- Modal Section -->
+    <section class="modal-section">
+      <button data-open-modal>Open Modal</button>
+      <dialog data-modal class="modal">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate,
+          asperiores. Labore, fugit cum. At maxime ratione inventore aperiam
+          dolor ipsum molestiae amet, eligendi, voluptates asperiores atque
+          vitae commodi vero magnam.
+        </p>
+        <button data-close-modal>Cancel</button>
+      </dialog>
+    </section>
+
+    <!-- Details Section -->
+    <aside class="details-section">
+      <details>
+        <summary>Open the details</summary>
+        <p>This showcases new HTML elements that are helpful in modern web development.</p>
+        <time datetime="2025-05-09">May 9, 2025</time>
+        <progress value="70" max="100">70%</progress>
+
+        <!-- Editable Content -->
+        <div contenteditable="true">You can edit this text.</div>
+
+        <!-- Image with Figure and Map -->
+        <figure>
+          <img src="edittor_html/cake.jpg" alt="Delicious Cake" usemap="#image-map">
+          <figcaption>A delicious cake. Use the map for navigation.</figcaption>
+        </figure>
+        <map name="image-map">
+          <area shape="circle" coords="50,50,40" href="https://www.tutorialbrain.com" alt="Tutorial">
+          <area shape="rect" coords="0,0,100,100" href="https://www.google.com" alt="Google">
+        </map>
+      </details>
+    </aside>
+
+    <!-- Forms Section -->
+    <section class="forms-section">
+      <!-- Data List -->
+      <form>
+        <label for="footwear">Choose a type of footwear:</label>
+        <input id="footwear" name="footS" list="footS">
+        <datalist id="footS">
+          <option value="Casual Shoes">
+          <option value="Sports Shoes">
+          <option value="Formal Shoes">
+          <option value="Farmer Shoes">
+          <option value="Leather Shoes">
+          <option value="Sandals">
+        </datalist>
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Fieldset Example -->
+      <fieldset>
+        <legend>User Information</legend>
+        <form>
+          <label>
+            Username:
+            <input type="text" name="username">
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email">
+          </label>
+          <label>
+            Password:
+            <input type="password" name="password">
+          </label>
+          <label>
+            File Upload:
+            <input type="file" name="upload">
+          </label>
+          <label>
+            Preferences:
+            <select name="preferences">
+              <optgroup label="Primary Options">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+              </optgroup>
+              <option value="extra">Extra</option>
+            </select>
+          </label>
+          <button type="submit">Save</button>
+        </form>
+      </fieldset>
+    </section>
+
+    <!-- Canvas Section -->
+    <section class="canvas-section">
+      <h2>Canvas Example</h2>
+      <canvas id="myCanvas" width="400" height="300" style="border: 1px solid #000;"></canvas>
+    </section>
+
+  </div>
+
+  <!-- JavaScript for Modal -->
+  <script>
+    const openButton = document.querySelector('[data-open-modal]');
+    const closeButton = document.querySelector('[data-close-modal]');
+    const modal = document.querySelector('[data-modal]');
+
+    openButton.addEventListener('click', () => {
+      modal.showModal(); // Open the modal
+    });
+
+    closeButton.addEventListener('click', () => {
+      modal.close(); // Close the modal
+    });
+  </script>
+</body>
+</html>
